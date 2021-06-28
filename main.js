@@ -157,9 +157,9 @@ const displayImg = (array) => {
 		handImg.id = `${idHead(array)}${i + 1}`;
 		handImg.classList.add(`${className(array)}`);
 		if(array === computerHands1 || array === computerHands2 || array === computerHands3) {
-			handImg.src = `../Trump-img/backside.png`
+			handImg.src = `./Trump-img/backside.png`
 		} else {
-			handImg.src = `../Trump-img/${array[i].mark}${array[i].number}.png`;
+			handImg.src = `./Trump-img/${array[i].mark}${array[i].number}.png`;
 		}
 		const element = document.getElementById(`${idName(array)}`);
 		element.appendChild(handImg);
